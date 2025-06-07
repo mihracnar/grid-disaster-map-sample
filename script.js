@@ -1,7 +1,7 @@
 // Initialize the map
 const map = L.map('map', {
   center: [39.5, -98.35], // USA center
-  zoom: 4,
+  zoom: 5,
   minZoom: 4,
   maxZoom: 5,
   zoomControl: false,
@@ -38,7 +38,7 @@ map.setMaxBounds(bounds);
 // map.fitBounds(bounds); // Bu satır kaldırıldı - zoom seviyesini bozuyordu
 
 // Zoom seviyesini sabitlemek için setView kullanın (opsiyonel)
-map.setView([39.5, -98.35], 4);
+map.setView([39.5, -98.35], 5);
 
 // Store grid data globally
 let gridData = {};
