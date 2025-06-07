@@ -1,0 +1,61 @@
+id,grid_id,type,icon,date,description
+1,37,Wildfire,bi-fire,2023-07-15,Major wildfire in Washington state Pacific coast affecting forested areas
+2,56,Flood,bi-droplet-fill,2023-04-20,Spring flooding in Northern Plains due to rapid snowmelt
+3,84,Hurricane,bi-hurricane,2022-09-12,Category 3 hurricane making landfall in Central Plains region
+4,81,Tornado,bi-tornado,2023-05-18,EF4 tornado outbreak in Colorado region causing severe damage
+5,77,Earthquake,bi-activity,2023-01-10,Magnitude 6.2 earthquake in California Nevada border region
+6,52,Wildfire,bi-fire,2022-08-03,Forest fire in Montana Idaho region burning thousands of acres
+7,82,Flood,bi-droplet-fill,2023-06-22,Platte River flooding affecting agricultural areas in Nebraska
+8,83,Hurricane,bi-hurricane,2022-10-28,Late season hurricane remnants affecting Kansas region
+9,79,Tornado,bi-tornado,2023-03-14,Violent tornado in Wyoming Colorado border causing destruction
+10,63,Earthquake,bi-activity,2023-02-08,Moderate earthquake in Oregon Cascades region
+11,76,Wildfire,bi-fire,2022-09-25,Drought-fueled wildfire in Northern California region
+12,70,Flood,bi-droplet-fill,2023-08-11,Missouri River flooding in North Dakota affecting farmland
+13,69,Hurricane,bi-hurricane,2022-11-15,Severe storm system affecting Montana region
+14,80,Tornado,bi-tornado,2023-04-09,Supercell tornado in Utah region with baseball-sized hail
+15,42,Earthquake,bi-activity,2023-07-02,Strong earthquake in Alberta Canada border region
+16,65,Wildfire,bi-fire,2022-07-19,Lightning-caused fire in Idaho wilderness area
+17,67,Flood,bi-droplet-fill,2023-05-25,Yellowstone River flooding impacting Montana farmland
+18,78,Hurricane,bi-hurricane,2022-09-08,Major storm system striking Nevada region
+19,68,Tornado,bi-tornado,2023-06-03,Dust storm and tornado complex in North Dakota
+20,75,Earthquake,bi-activity,2023-03-22,Pacific coastal earthquake in Oregon affecting coastal areas
+21,124,Wildfire,bi-fire,2023-08-14,Massive wildfire in Northern California burning 50000 acres
+22,156,Flood,bi-droplet-fill,2023-05-12,Mississippi River flooding affecting Louisiana region
+23,187,Hurricane,bi-hurricane,2022-10-05,Category 4 hurricane hitting Texas Gulf Coast
+24,234,Tornado,bi-tornado,2023-04-22,EF5 tornado devastating Oklahoma communities
+25,298,Earthquake,bi-activity,2023-03-18,Major earthquake along San Andreas fault system
+26,145,Wildfire,bi-fire,2022-07-28,Severe drought conditions fueling Arizona wildfires
+27,189,Flood,bi-droplet-fill,2023-09-03,Flash flooding in Colorado Rocky Mountain region
+28,267,Hurricane,bi-hurricane,2022-08-19,Hurricane remnants causing flooding in Arkansas
+29,312,Tornado,bi-tornado,2023-06-11,Tornado alley supercell outbreak in Kansas
+30,356,Earthquake,bi-activity,2023-02-14,Seismic activity in Yellowstone volcanic region
+31,398,Wildfire,bi-fire,2023-07-08,Forest fires threatening communities in Oregon
+32,423,Flood,bi-droplet-fill,2023-04-16,Severe flooding along Missouri River basin
+33,445,Hurricane,bi-hurricane,2022-09-22,Tropical storm system affecting Great Lakes region
+34,387,Tornado,bi-tornado,2023-05-27,Multiple tornado touchdowns in Iowa farmland
+35,334,Earthquake,bi-activity,2023-01-25,Moderate earthquake in Nevada desert region
+36,201,Wildfire,bi-fire,2022-08-11,Lightning-sparked fires in Washington State forests
+37,167,Flood,bi-droplet-fill,2023-07-20,Urban flooding in Denver metropolitan area
+38,289,Hurricane,bi-hurricane,2022-11-02,Late season storm affecting Michigan region
+39,365,Tornado,bi-tornado,2023-03-29,Violent tornado outbreak in Texas panhandle
+40,412,Earthquake,bi-activity,2023-06-05,Earthquake swarm in Utah mountain region
+41,98,Wildfire,bi-fire,2023-09-12,Grassland fires spreading across Nebraska plains
+42,134,Flood,bi-droplet-fill,2023-08-07,Red River flooding in North Dakota Minnesota
+43,176,Hurricane,bi-hurricane,2022-07-15,Severe thunderstorm complex in Illinois region
+44,223,Tornado,bi-tornado,2023-05-03,Multi-vortex tornado in Missouri countryside
+45,278,Earthquake,bi-activity,2023-04-11,Earthquake activity near New Madrid fault zone
+46,321,Wildfire,bi-fire,2022-09-18,Wildfire threatening Montana ranching communities
+47,367,Flood,bi-droplet-fill,2023-06-28,Spring snowmelt flooding in Wyoming valleys
+48,401,Hurricane,bi-hurricane,2022-08-25,Tropical cyclone remnants in Minnesota region
+49,434,Tornado,bi-tornado,2023-07-14,Dust devil and tornado activity in Arizona
+50,465,Earthquake,bi-activity,2023-05-19,Border region seismic activity in North Dakota
+51,113,Wildfire,bi-fire,2023-08-22,Severe wildfire season in Pacific Northwest
+52,158,Flood,bi-droplet-fill,2023-04-08,Prairie pothole flooding in South Dakota
+53,192,Hurricane,bi-hurricane,2022-10-12,Extratropical cyclone affecting Great Plains
+54,241,Tornado,bi-tornado,2023-06-17,Supercell development in Oklahoma tornado alley
+55,295,Earthquake,bi-activity,2023-02-26,Intraplate earthquake in Arkansas region
+56,349,Wildfire,bi-fire,2022-07-31,Desert brush fires in Nevada wilderness
+57,378,Flood,bi-droplet-fill,2023-09-15,Flash flooding in Utah canyon systems
+58,416,Hurricane,bi-hurricane,2022-09-29,Severe weather system in Wisconsin region
+59,453,Tornado,bi-tornado,2023-05-08,Tornado outbreak in eastern Colorado
+60,89,Earthquake,bi-activity,2023-07-23,Minor earthquake cluster in Montana region

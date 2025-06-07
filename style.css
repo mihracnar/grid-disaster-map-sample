@@ -1,0 +1,233 @@
+#map {
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Disaster Icon Styles - Küçültülmüş */
+.disaster-icon {
+  font-size: 12px;
+  font-weight: 900;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #333;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Disaster Type Specific Colors */
+.disaster-icon.fire {
+  background: #ff6b6b;
+  border-color: #d63031;
+  color: white;
+}
+
+.disaster-icon.flood {
+  background: #74b9ff;
+  border-color: #0984e3;
+  color: white;
+}
+
+.disaster-icon.hurricane {
+  background: #fd79a8;
+  border-color: #e84393;
+  color: white;
+}
+
+.disaster-icon.tornado {
+  background: #fdcb6e;
+  border-color: #e17055;
+  color: white;
+}
+
+.disaster-icon.earthquake {
+  background: #a29bfe;
+  border-color: #6c5ce7;
+  color: white;
+}
+
+/* Hover Effects */
+.disaster-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Disaster Marker Container - Grid Centering */
+.disaster-marker-container {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Leaflet marker positioning - let iconAnchor handle centering */
+.leaflet-marker-icon.disaster-marker-container {
+  margin: 0 !important;
+}
+
+/* Modern Basemap Toggle */
+.basemap-toggle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.basemap-toggle:hover {
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+/* Modern Map Title */
+.map-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 12px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 2px;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Info Button */
+.info-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 10px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.info-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+.toggle-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.toggle-switch {
+  width: 40px;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.toggle-switch.active {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+}
+
+.toggle-slider {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-switch.active .toggle-slider {
+  transform: translateX(20px);
+}
+
+.info-button i {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+/* Custom Modal Styling */
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px 20px 0 0;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.btn-close {
+  filter: invert(1);
+}
+
+/* Legend styles for modal */
+.legend-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 8px;
+  font-size: 20px;
+  border: 2px solid;
+}

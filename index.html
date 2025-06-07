@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Masked Grid Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+
+<!-- Modern Map Title -->
+<div class="map-title">USA DISASTER MAP</div>
+
+<!-- Info Button -->
+<div class="info-button" data-bs-toggle="modal" data-bs-target="#infoModal">
+  <i class="bi bi-info-circle"></i>
+</div>
+
+<!-- Modern Basemap Toggle -->
+<div class="basemap-toggle" id="basemapToggle">
+  <div class="toggle-content">
+    <span>Show Basemap</span>
+    <div class="toggle-switch" id="toggleSwitch">
+      <div class="toggle-slider"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Disaster Modal -->
+<div class="modal fade" id="disasterModal" tabindex="-1" aria-labelledby="disasterModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="disasterModalLabel">Disaster Info</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="modalContent"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Info Modal -->
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-4" id="infoModalLabel">📊 About Project</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-12">
+            <h5>🗺️ Disaster Map Project</h5>
+            <p>This interactive map has been developed to visualize the locations and information of various natural disasters.</p>
+            
+            <h6>🎯 Project Features:</h6>
+            <ul>
+              <li><strong>Interactive Grid System:</strong> 10x10 grid structure within elliptical boundaries</li>
+              <li><strong>Disaster Types:</strong> Wildfire, flood, hurricane, tornado and earthquake</li>
+              <li><strong>Modern Interface:</strong> Glassmorphism design effects</li>
+              <li><strong>Basemap Toggle:</strong> Map layer show/hide feature</li>
+              <li><strong>Detailed Information:</strong> Popup information window for each disaster</li>
+            </ul>
+            
+            <h6>🔧 Technologies Used:</h6>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span class="badge bg-primary">Leaflet.js</span>
+              <span class="badge bg-success">Bootstrap 5</span>
+              <span class="badge bg-info">HTML5</span>
+              <span class="badge bg-warning">CSS3</span>
+              <span class="badge bg-danger">JavaScript</span>
+            </div>
+            
+            <h6>📋 Disaster Symbols:</h6>
+            <div class="row text-center">
+              <div class="col">
+                <div class="legend-icon fire" style="background: #ff6b6b; border-color: #d63031; color: white;">
+                  <i class="bi bi-fire"></i>
+                </div>
+                <div>Wildfire</div>
+              </div>
+              <div class="col">
+                <div class="legend-icon flood" style="background: #74b9ff; border-color: #0984e3; color: white;">
+                  <i class="bi bi-droplet-fill"></i>
+                </div>
+                <div>Flood</div>
+              </div>
+              <div class="col">
+                <div class="legend-icon hurricane" style="background: #fd79a8; border-color: #e84393; color: white;">
+                  <i class="bi bi-hurricane"></i>
+                </div>
+                <div>Hurricane</div>
+              </div>
+              <div class="col">
+                <div class="legend-icon tornado" style="background: #fdcb6e; border-color: #e17055; color: white;">
+                  <i class="bi bi-tornado"></i>
+                </div>
+                <div>Tornado</div>
+              </div>
+              <div class="col">
+                <div class="legend-icon earthquake" style="background: #a29bfe; border-color: #6c5ce7; color: white;">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <div>Earthquake</div>
+              </div>
+            </div>
+            
+            <hr>
+            <p class="text-muted small mt-3">
+              <strong>Note:</strong> This project has been developed for educational and demonstration purposes. 
+              The disaster data displayed is for simulation purposes and not real data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
