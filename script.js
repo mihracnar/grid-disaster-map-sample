@@ -3,7 +3,7 @@ const map = L.map('map', {
   center: [39.5, -98.35], // USA center
   zoom: 4,
   minZoom: 4,
-  maxZoom: 4,
+  maxZoom: 5,
   zoomControl: false,
   attributionControl: false
 });
@@ -35,7 +35,10 @@ toggleElement.addEventListener('click', () => {
 // Set map bounds for USA
 const bounds = [[24, -125], [50, -65]];
 map.setMaxBounds(bounds);
-map.fitBounds(bounds);
+// map.fitBounds(bounds); // Bu satır kaldırıldı - zoom seviyesini bozuyordu
+
+// Zoom seviyesini sabitlemek için setView kullanın (opsiyonel)
+map.setView([39.5, -98.35], 4);
 
 // Store grid data globally
 let gridData = {};
@@ -75,7 +78,7 @@ async function loadGridData() {
       style: {
         color: '#aaa',
         weight: 0.5,
-        fillOpacity: 0.1
+        fillOpacity: 0.05
       }
     }).addTo(map);
     
