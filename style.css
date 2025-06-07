@@ -82,7 +82,7 @@
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border: 3px solid rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.75);
   border-radius: 25px;
   padding: 10px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -106,7 +106,7 @@
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border: 3px solid rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.75);
   border-radius: 25px;
   padding: 12px 24px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
@@ -127,7 +127,7 @@
   z-index: 1000;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
-  border: 3px solid rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.75);
   border-radius: 50%;
   padding: 10px;
   width: 45px;
@@ -203,6 +203,10 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
+.modal-dialog {
+  margin-top: 100px; /* Modal'ı aşağıya kaydır - istediğiniz değeri ayarlayın */
+}
+
 .modal-header {
   background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -230,4 +234,163 @@
   margin: 0 auto 8px;
   font-size: 20px;
   border: 2px solid;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Disaster Icons - Mobilde daha büyük dokunmatik hedefler */
+  .disaster-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    border: 3px solid #333;
+  }
+  
+  /* Map Title - Mobilde daha küçük ve üstte daha az yer kaplar */
+  .map-title {
+    top: 10px;
+    font-size: 14px;
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Info Button - Mobilde daha büyük dokunmatik hedef */
+  .info-button {
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .info-button i {
+    font-size: 22px;
+  }
+  
+  /* Basemap Toggle - Mobilde daha büyük ve alt kısımda */
+  .basemap-toggle {
+    bottom: 15px;
+    padding: 12px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+  }
+  
+  .toggle-content {
+    font-size: 15px;
+    gap: 12px;
+  }
+  
+  .toggle-switch {
+    width: 45px;
+    height: 24px;
+  }
+  
+  .toggle-slider {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+  }
+  
+  .toggle-switch.active .toggle-slider {
+    transform: translateX(21px);
+  }
+  
+  /* Modal Optimizations for Mobile */
+  .modal-dialog {
+    margin: 50px 10px 10px 10px; /* Mobilde üstten 50px boşluk */
+    max-width: calc(100vw - 20px);
+  }
+  
+  .modal-content {
+    border-radius: 15px;
+  }
+  
+  .modal-header {
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+  }
+  
+  .modal-body {
+    padding: 20px 15px;
+    font-size: 14px;
+  }
+  
+  /* Legend icons in modal - mobilde daha büyük */
+  .legend-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Remove hover effects on mobile */
+  .disaster-icon:hover {
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .basemap-toggle:hover {
+    transform: translateX(-50%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .info-button:hover {
+    transform: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  /* Map Title - Çok küçük ekranlarda daha da kompakt */
+  .map-title {
+    font-size: 12px;
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Info Button - Küçük ekranlarda biraz daha küçük */
+  .info-button {
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+  }
+  
+  .info-button i {
+    font-size: 20px;
+  }
+  
+  /* Basemap Toggle - Küçük ekranlarda kompakt */
+  .basemap-toggle {
+    padding: 10px 16px;
+  }
+  
+  .toggle-content {
+    font-size: 13px;
+    gap: 10px;
+  }
+  
+  /* Modal for very small screens */
+  .modal-dialog {
+    margin: 30px 5px 5px 5px; /* Küçük ekranlarda üstten 30px */
+    max-width: calc(100vw - 10px);
+  }
+  
+  .modal-body {
+    padding: 15px 10px;
+    font-size: 13px;
+  }
+  
+  .legend-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
 }
